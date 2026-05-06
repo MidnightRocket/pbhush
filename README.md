@@ -1,3 +1,9 @@
+# Source code available at [Codeberg](https://codeberg.org/MidnightRocket/swift-pbsecret/)
+
+This repository merely exists to allow you to discover this project on Github.
+
+For more information go to [giveupgithub.org](https://giveupgithub.org/).
+
 # swift-pbsecret
 
 This is a small cli utility which copies text from `STDIN` to the clipboard,
