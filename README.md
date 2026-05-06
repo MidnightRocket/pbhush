@@ -1,8 +1,10 @@
 # Source code available at [Codeberg](https://codeberg.org/MidnightRocket/swift-pbsecret/)
 
-This repository merely exists to allow you to discover this project on Github.
+In the spirit of [#GiveUpGithub](https://giveupgithub.org/) the source code for this
+project can be found on [Codeberg](https://codeberg.org/MidnightRocket/swift-pbsecret/),
+a Github alternative driven by a non profit organization based in the EU!
 
-For more information go to [giveupgithub.org](https://giveupgithub.org/).
+This repository merely exists to allow you to discover this project on Github.
 
 # swift-pbsecret
 
@@ -21,6 +23,8 @@ Clone the git repository:
 
 ```sh
 git clone "https://codeberg.org/MidnightRocket/swift-pbsecret.git"
+
+cd "swift-pbsecret"
 ```
 
 Use make to install for current user only `$HOME/.local/bin`:
@@ -29,7 +33,7 @@ Use make to install for current user only `$HOME/.local/bin`:
 make install-local
 ```
 
-Or system wide (`/usr/local/bin`). This will prompt for password:
+**Or** system wide (`/usr/local/bin`). This will prompt for password:
 
 ```sh
 make install
