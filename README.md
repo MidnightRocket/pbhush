@@ -1,12 +1,12 @@
-# Source code available at [Codeberg](https://codeberg.org/MidnightRocket/swift-pbsecret/)
+# Source code available at [Codeberg](https://codeberg.org/MidnightRocket/pbhush/)
 
 In the spirit of [#GiveUpGithub](https://giveupgithub.org/) the source code for this
-project can be found on [Codeberg](https://codeberg.org/MidnightRocket/swift-pbsecret/),
+project can be found on [Codeberg](https://codeberg.org/MidnightRocket/pbhush/),
 a Github alternative driven by a non profit organization based in the EU!
 
 This repository merely exists to allow you to discover this project on Github.
 
-# swift-pbsecret
+# pbhush
 
 This is a small cli utility which copies text from `STDIN` to the clipboard,
 whilst marking the content as secret. This means conforming clipboard managers,
@@ -22,9 +22,9 @@ This includes the new clipboard history feature in [MacOS Tahoe](https://support
 Clone the git repository:
 
 ```sh
-git clone "https://codeberg.org/MidnightRocket/swift-pbsecret.git"
+git clone "https://codeberg.org/MidnightRocket/pbhush.git"
 
-cd "swift-pbsecret"
+cd "pbhush"
 ```
 
 Use make to install for current user only `$HOME/.local/bin`:
@@ -41,17 +41,17 @@ make install
 
 ## Usage
 
-Simply pipe secret data into the `pbsecret` utility:
+Simply pipe secret data into the `pbhush` utility:
 
 ```sh
-echo some secret | pbsecret
+echo some secret | pbhush
 ```
 
 It is also possible to automatically clear the clipboard
 after `N` seconds using:
 
 ```sh
-echo some secret | pbsecret --ttl 30
+echo some secret | pbhush --ttl 30
 ```
 
 By default will copied content not synchronize to iCloud devices via
@@ -59,19 +59,19 @@ By default will copied content not synchronize to iCloud devices via
 To allow syncing content use:
 
 ```sh
-echo some secret | pbsecret --alow-sync
+echo some secret | pbhush --alow-sync
 ```
 
 For more help use:
 
 ```sh
-pbsecret --help
+pbhush --help
 ```
 
 ## Attribution
 
-- This project is very much inspired by [github.com/roosto/pbsecret](https://github.com/roosto/pbsecret).
-- `swift-pbsecret` marks content with `org.nspasteboard.ConcealedType`
+- This project is very much inspired by [github.com/roosto/pbhush](https://github.com/roosto/pbhush).
+- `pbhush` marks content with `org.nspasteboard.ConcealedType`
   defined at [nspasteboard.org](https://nspasteboard.org/)
 
 ### Dependencies
