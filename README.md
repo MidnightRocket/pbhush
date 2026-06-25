@@ -97,7 +97,7 @@ echo some secret | pbhush --no-trim
 
 ## Attribution
 
-- This project is very much inspired by [github.com/roosto/pbhush](https://github.com/roosto/pbhush).
+- This project is very much inspired by [github.com/roosto/pbsecret](https://github.com/roosto/pbsecret).
 - `pbhush` marks content with `org.nspasteboard.ConcealedType`
   defined at [nspasteboard.org](https://nspasteboard.org/)
 
