@@ -17,7 +17,13 @@ This includes the new clipboard history feature in [MacOS Tahoe](https://support
 
 ## Install
 
-### From source
+### Via [MacPorts](https://macports.org) (Recommended)
+
+```sh
+sudo port install pbhush
+```
+
+### Build & install from source
 
 Clone the git repository:
 
@@ -52,6 +58,8 @@ after `N` seconds using:
 
 ```sh
 echo some secret | pbhush --ttl 30
+# Or short form
+echo some secret | pbhush -t 30
 ```
 
 By default will copied content not synchronize to iCloud devices via
@@ -60,6 +68,8 @@ To allow syncing content use:
 
 ```sh
 echo some secret | pbhush --alow-sync
+# Or short form
+echo some secret | pbhush -s
 ```
 
 For more help use:
@@ -67,6 +77,23 @@ For more help use:
 ```sh
 pbhush --help
 ```
+
+### Trimmed trailing newlines
+
+`pbhush` will trim all trailing newlines by default.  
+This is because most shell commands outputs a trailing newline
+so it looks cleaner in the terminal.
+However most often it is not desirable to copy the trailing newlines.
+
+This behavior can be disabled by using:
+
+```sh
+echo some secret | pbhush --no-trim
+```
+
+> [!IMPORTANT]
+> The builtin `pbcopy` utility does not trim any trailing newlines.
+> Thus the default behavior of `pbhush` differs in this regard.
 
 ## Attribution
 
